@@ -1,0 +1,81 @@
+@media (max-width: 900px) {
+    body {
+        background:
+            radial-gradient(1200px 600px at 10% 10%, #1f2937, transparent),
+            radial-gradient(800px 400px at 75% 20%, #312e81, transparent),
+            /* moved slightly left */
+            radial-gradient(600px 300px at 50% 90%, #064e3b, transparent),
+            #050505;
+    }
+
+    .about-content {
+        flex-direction: column-reverse;
+        text-align: center;
+        justify-content: center;
+        /* center horizontally */
+        align-items: center;
+        /* center image and text */
+        gap: 16px;
+        /* reduce gap on mobile */
+    }
+
+    .grid-3 {
+        gap: 16px;
+        /* reduce grid gap on mobile */
+    }
+
+    .container {
+        padding-left: 16px;
+        padding-right: 16px;
+        width: fit-content;
+    }
+
+    .popUp {
+        animation: appear linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 10%;
+    }
+
+    .grid-3,
+    .grid-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .span-2 {
+        grid-column: auto;
+    }
+
+    .about-content {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .about-image {
+        width: 150px;
+        height: 150px;
+    }
+
+    .resume-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hire-cta h2 {
+        font-size: 32px;
+    }
+
+    .hire-links {
+        flex-wrap: wrap;
+        gap: 18px;
+    }
+
+    .hire-bottom {
+        flex-direction: column;
+        gap: 12px;
+    }
+}
+
+@media (min-width: 901px) {
+    .grid-3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

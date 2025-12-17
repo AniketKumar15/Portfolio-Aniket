@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aniket | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./mediaQuery.css">
+    <link rel="shortcut icon" href="./Images/myImage.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="cursor"></div>
+    <canvas id="starfield"></canvas>
+    <main class="container" id="top">
+        <!-- Header -->
+        <section class="grid-3">
+            <div class="bento popUp span-2">
+                <h1>Aniket Kumar</h1>
+                <p>Game Developer & Full‑Stack Web Developer</p>
+            </div>
+            <div>
+                <h2>Follow Me</h2>
+                <div class="bento socials" style="display:flex;gap:12px;justify-content:center;align-items:center;">
+                    <a href="https://github.com/AniketKumar15">GitHub</a>
+                    <a href="https://www.linkedin.com/in/aniketkumar15/">LinkedIn</a>
+                    <a href="https://x.com/anikumar_dev">X</a>
+                    <a href="https://www.youtube.com/@GameDevWithAniket">Youtube</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section class="grid-3">
+            <div class="bento popUp span-2" id="about">
+                <h2>About Me</h2>
+
+                <div class="about-content">
+                    <p>
+                        My journey into development began with games — experimenting with mechanics, player feedback,
+                        and moment-to-moment gameplay in Unity.
+                        Over time, that curiosity expanded into full-stack web development, where I apply the same
+                        problem-solving mindset using React, PHP, and Node.js to build real, working projects.
+                        Game jams and hackathons shaped how I work: rapid prototyping, clear thinking, and creating
+                        meaningful experiences under tight deadlines.
+                    </p>
+
+                    <div class="about-image">
+                        <img src="./Images/myImage.png" alt="Aniket Kumar" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="bento popUp">
+                <h3>Resume-<span class="muted">Tailored resumes for different roles</span></h3>
+                <div class="resume-grid">
+                    <!-- Web Resume -->
+                    <a href="./Resume-Web-Developer.pdf" download class="resume-card">
+                        <div class="resume-icon">🌐</div>
+                        <div>
+                            <h3>Web Developer</h3>
+                            <p>React · MERN · Full-Stack</p>
+                        </div>
+                    </a>
+
+                    <!-- Game Resume -->
+                    <a href="./Resume-Game-Developer.pdf" download class="resume-card">
+                        <div class="resume-icon">🎮</div>
+                        <div>
+                            <h3>Game Developer</h3>
+                            <p>Unity · C# · Gameplay Systems</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+
+        </section>
+
+        <!-- Skills -->
+        <section class="bento popUp">
+            <h2>Skills</h2>
+            <div class="grid-3">
+                <div>
+                    <h3>Game Development</h3>
+                    <div class="tags"><span>Unity</span><span>C#</span></div>
+                </div>
+                <div>
+                    <h3>Web Development</h3>
+                    <div class="tags">
+                        <span>React</span><span>Tailwind</span><span>Node.js</span><span>MongoDB</span><span>MERN</span>
+                    </div>
+                </div>
+                <div>
+                    <h3>Languages & Tools</h3>
+                    <div class="tags">
+                        <span>Python</span><span>C</span><span>C++</span><span>PHP</span><span>MySQL</span><span>Git</span><span>GitHub</span><span>Canva</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="bento popUp" id="projects">
+            <h2>Projects</h2>
+            <div class="popUp">
+                <h3>🕹️Game Development - <span><a href="https://bright-moon-bm.itch.io/">More Projects</a></span></h3>
+                <div class="projects">
+                    <div class="project-card">
+                        <img src="./Images/TypeAndDefence.png" alt="TypeAndDefence" />
+                        <div class="project-content">
+                            <h3>TYPE AND DEFEND</h3>
+                            <p>Type & Defend is a fast-paced typing defense game where every keystroke matters.
+                                Built in 72 hours for BYOG Game Jam 2025, the game challenges players to protect their
+                                tower by typing on-screen words to eliminate incoming enemies.
+                                Accuracy is critical — every typo damages the tower, turning speed and precision into
+                                the core survival mechanic.
+                                <a class="playNowLink" href="https://bright-moon-bm.itch.io/type-and-defend">Play
+                                    Now</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="./Images/DeathLoop.png" alt="DeathLoop" />
+                        <div class="project-content">
+                            <h3>Death Loop – Escape the Loop by Dying</h3>
+                            <p>A 2D platformer puzzle game built for GMTK Game Jam 2025, where death is the core
+                                mechanic.
+                                Instead of avoiding danger, players must discover creative ways to die to escape a
+                                looping dream.
+                                Every death reshapes the world, introducing subtle changes, new hazards, and fresh
+                                puzzle solutions.
+                                <a class="playNowLink" href="https://bright-moon-bm.itch.io/death-loop">Play Now</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="./Images/ShifWalker.png" alt="ShifWalker" />
+                        <div class="project-content">
+                            <h3>ShiftWalker</h3>
+                            <p>ShiftWalker is a 2D side-scrolling puzzle platformer built for AI Bootcamp with Nikhil
+                                Malankar(GameEon CEO) by Spawnskool, where
+                                players can shift between two parallel worlds to navigate through increasingly complex
+                                levels. The core mechanic explores the theme "One Mechanic, Many Worlds".
+                                <a class="playNowLink" href="https://bright-moon-bm.itch.io/shiftwalker">Play Now</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Web Dev -->
+            <div class="popUp">
+                <h3 style="margin-top: 30px;">🕹️Web Development</h3>
+                <div class="projects">
+                    <div class="project-card">
+                        <img src="./Images/KamiNoto.png" alt="KamiNoto" />
+                        <div class="project-content">
+                            <h3>KamiNoto</h3>
+                            <p>Developed a full-stack note-taking app using MongoDB, Express, React, and Node.js. Built
+                                secure authentication, CRUD functionality for notes, category-based color tagging, and
+                                pinning features, with a focus on clean UI and smooth user experience.
+                                <a class="playNowLink" href="https://kami-noto-8fhu.vercel.app">Visit Now</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="./Images/Zenkai.png" alt="Zenkai" />
+                        <div class="project-content">
+                            <h3>Zenkia – Social Media Web Application</h3>
+                            <p>A social media platform developed using PHP, HTML, and CSS, featuring user
+                                authentication, posts, likes, comments, follow system, and real-time-style
+                                notifications. Built as part of TECHPHILIA 8.0 Hackathon organized by Amity University
+                                Patna, with a focus on core social interaction features.
+                                <a class="playNowLink" href="https://github.com/AniketKumar15/socialmedia">Source
+                                    Code</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="./Images/SpaceShooter.png" alt="Space Shooter" />
+                        <div class="project-content">
+                            <h3>Space Shooter Game – Browser-Based Game</h3>
+                            <p>A fast-paced browser-based space shooter built using JavaScript and Kaboom.js.
+                                Implemented enemy spawning, responsive player controls, collision detection, and scoring
+                                systems, with support for both keyboard (PC) and touch input (mobile). Focused on smooth
+                                animations and real-time gameplay interaction
+                                <a class="playNowLink" href="https://aniketkumar15.github.io/Space-Shooter-Game/">Play
+                                    Now</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services -->
+
+        <section class="grid-3">
+            <div class="bento popUp span-2">
+                <h2>Certificates</h2>
+                <div class="slider" id="certSlider">
+                    <div class="slides">
+                        <img src="./Images/Certificates/Aniket Kumar Spawn Skool Certificate (1)_page-0001.jpg"
+                            alt="Certificate 1" loading="lazy">
+                        <img src="./Images/Certificates/Byteverse25.jpg" alt="Certificate 2" loading="lazy">
+                        <img src="./Images/Certificates/Hackit-Amity.jpg" alt="Certificate 3" loading="lazy">
+                        <img src="./Images/Certificates/Techphilia8.jpg" alt="Certificate 4" loading="lazy">
+                        <img src="./Images/Certificates/PWC-Virasat.jpg" alt="Certificate 4" loading="lazy">
+                    </div>
+                </div>
+            </div>
+
+            <div class="bento popUp">
+                <h2>Services</h2>
+                <p class="subtitle">How I can add value to your project</p>
+
+                <div class="simple" style="display: flex; flex-direction: column; gap: 12px; margin-top: 10px;">
+                    <div>🎮 Game mechanics & gameplay systems</div>
+                    <div>🧪 Rapid prototyping & MVP builds</div>
+                    <div>🤖 AI logic, state machines & behaviors</div>
+                    <div>🌐 Frontend & full-stack web development</div>
+                    <div>🧠 Debugging, refactoring & optimization</div>
+                    <div>🚀 Deployment, builds & project setup</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Extra -->
+        <!-- Hire Me -->
+        <section class="bento popUp hire-cta" id="hire">
+            <h2>Looking to hire a developer?</h2>
+
+            <p class="hire-subtitle">
+                I’m open to game development, web development, and creative tech opportunities.
+            </p>
+
+            <a href="mailto:aniket87091@gmail.com" class="hire-email">
+                aniket87091@gmail.com
+            </a>
+
+            <!-- Footer Links -->
+            <div class="hire-links">
+                <a href="#projects">Projects</a>
+                <a href="#about">About me</a>
+                <a href="mailto:aniket87091@gmail.com">Contact</a>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="hire-bottom">
+                <span>© 2025 · All rights reserved</span>
+
+                <a href="#top" class="back-to-top">
+                    Back to Top ↑
+                </a>
+            </div>
+        </section>
+        <section>
+            <div class="footerSocialLink">
+                <a href="https://github.com/AniketKumar15"><img src="./Images/icons/github.png" alt="" class="linkIcon">
+                    GitHub</a>
+                <a href="https://www.linkedin.com/in/aniketkumar15/"><img src="./Images/icons/linkedin.png" alt=""
+                        class="linkIcon">LinkedIn</a>
+                <a href="https://x.com/anikumar_dev"><img src="./Images/icons/itch-io-brands-solid.svg" alt=""
+                        class="linkIcon">Itch.io</a>
+                <a href="https://www.youtube.com/@GameDevWithAniket"><img src="./Images/icons/youtube.png" alt=""
+                        class="linkIcon">Youtube</a>
+            </div>
+        </section>
+
+        <!-- <footer>© 2025 Aniket</footer> -->
+        <script src="./app.js"></script>
+    </main>
+</body>
+
+</html>
