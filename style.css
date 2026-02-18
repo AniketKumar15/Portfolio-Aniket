@@ -74,6 +74,15 @@ body {
     transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
+#projects {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.01));
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    padding: 24px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
 .bento:hover {
     transform: scale(1.02);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
@@ -245,12 +254,6 @@ footer {
     height: 350px;
     object-fit: cover;
     display: block;
-    filter: grayscale(100%)
-}
-
-.project-card img:hover {
-    filter: grayscale(0%);
-    transition: filter 0.3s ease;
 }
 
 .project-content {
